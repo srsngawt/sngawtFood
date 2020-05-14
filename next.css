@@ -228,7 +228,7 @@
 				list-style:none;
 				position:fixed;
 				left:-0px;
-				top:95%;
+				top:90%;
 				height:60px;
 				width:100%;
 				background-color:white;
@@ -316,12 +316,12 @@
 			{
 				height:205px;
 				float:left;
-				width:160px;;
+				width:150px;;
 				text-align:center;
 				font-family:arial;
 				margin-bottom:60px;
-				margin-left:22px;
-				margin-right:22px;
+				margin-left:18px;
+				margin-right:18px;
 			.title{
 				color:grey;
 				font-size:8px;
@@ -339,14 +339,14 @@
 				background-color: #000;
 				text-align: center;
 				cursor: pointer;
-				width:150px;
+				width:140px;
 				height:20px;
 				font-size: 10px;
 			}
 			.margin img{
 				display:block;
 				margin-left:5px;
-				width:150px;
+				width:140px;
 				height:130px;
 				
 			}
