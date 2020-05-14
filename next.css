@@ -228,7 +228,7 @@
 				list-style:none;
 				position:fixed;
 				left:-0px;
-				top:90%;
+				top:95%;
 				height:60px;
 				width:100%;
 				background-color:white;
@@ -318,7 +318,7 @@
 			{
 				height:205px;
 				float:left;
-				width:130px;
+				width:160px;
 				text-align:center;
 				font-family:arial;
 				margin-bottom:60px;
@@ -342,14 +342,14 @@
 				background-color: #000;
 				text-align: center;
 				cursor: pointer;
-				width:120px;
+				width:150px;
 				height:20px;
 				font-size: 10px;
 			}
 			.margin img{
 				display:block;
 				margin-left:5px;
-				width:120px;
+				width:150px;
 				height:95px;	
 			}
 		}
