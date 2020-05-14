@@ -228,7 +228,7 @@
 				list-style:none;
 				position:fixed;
 				left:-0px;
-				top:90%;
+				top:88%;
 				height:60px;
 				width:100%;
 				background-color:white;
@@ -246,15 +246,18 @@
 				padding-left:0px;
 				padding-right:0px;
 				font-size:31px;
+				color:#000;
 			}
 			ul li .glyphicon-user{
 				font-size:28px;
 				padding-right:0px;
 				margin-left:50px;
+				color:#000;
 			}
 			ul li .glyphicon-thumbs-up{
 				font-size:31px;
 				margin-right:50px;
+				color:#000;
 			}
 			ul li a{
 				padding:0px;
@@ -316,12 +319,12 @@
 			{
 				height:205px;
 				float:left;
-				width:150px;;
+				width:140px;;
 				text-align:center;
 				font-family:arial;
 				margin-bottom:60px;
-				margin-left:18px;
-				margin-right:18px;
+				margin-left:15px;
+				margin-right:15px;
 			.title{
 				color:grey;
 				font-size:8px;
@@ -339,14 +342,14 @@
 				background-color: #000;
 				text-align: center;
 				cursor: pointer;
-				width:140px;
+				width:130px;
 				height:20px;
 				font-size: 10px;
 			}
 			.margin img{
 				display:block;
 				margin-left:5px;
-				width:140px;
+				width:130px;
 				height:130px;
 				
 			}
