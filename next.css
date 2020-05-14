@@ -228,12 +228,11 @@
 				list-style:none;
 				position:fixed;
 				left:-0px;
-				bottom:0;
+				top:95%;
 				height:60px;
 				width:100%;
 				background-color:white;
 				padding-left:0;
-				
 			}
 			ul li{
 				float:left;
@@ -317,13 +316,12 @@
 			{
 				height:205px;
 				float:left;
-				width:130px;;
+				width:160px;;
 				text-align:center;
 				font-family:arial;
 				margin-bottom:60px;
-				margin-left:10px;
-				margin-right:10px;
-			}
+				margin-left:22px;
+				margin-right:22px;
 			.title{
 				color:grey;
 				font-size:8px;
@@ -341,15 +339,15 @@
 				background-color: #000;
 				text-align: center;
 				cursor: pointer;
-				width:120px;
+				width:150px;
 				height:20px;
 				font-size: 10px;
 			}
 			.margin img{
 				display:block;
 				margin-left:5px;
-				width:120px;
-				height:100px;
+				width:150px;
+				height:130px;
 				
 			}
 		}
