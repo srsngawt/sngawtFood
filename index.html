@@ -35,7 +35,7 @@
 		To keep and connect with us. Please login with your personnel info.
 	</div>
 
-	<form class="container" onsubmit="open()" method="POST">
+	<form class="container" action="next" method="POST">
 		<h2>Login</h2>
 		<label for="email"><b>Email</b></label>
 		<input type="email" maxlength="22" placeholder=" 🔒  Email" name="t1" required>
@@ -67,10 +67,6 @@
 		else {index=0}
 		slides[index].style.display="block";
 		setTimeout(slideshow,3500);
-	}
-	function open()
-	{
-		window.open("next.html");
 	}
 </script>
 </body>
