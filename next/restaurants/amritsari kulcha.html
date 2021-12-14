@@ -1,0 +1,726 @@
+<!Doctype HTML>
+<html lang="en">
+<head>
+	<title>Amritsari Kulcha | Home Delivery</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="../../images/title.png" type="image/png">
+	<style>
+		body
+		{
+			font-family:arial;
+		}
+		.bar
+		{	display:inline-block;
+			width:85%;
+			height:65px;
+			padding-left:150px;
+			padding-right:150px;
+			vertical-align:middle;
+			
+		}
+		
+		.location
+		{	font-size:20px;
+			font-weight:bold;
+			margin:10px;
+			position:absolute;
+			top:17px;
+			left:200px;
+			text-decoration:underline;
+		}
+		.addr
+		{	font-family:advent pro;
+			font-size:22px;
+			position:absolute;
+			top:26px;
+			left:336px;
+			color: #ddd;
+		}
+		ul
+		{
+			margin:0;
+			padding:0;
+			list-style:none;
+			position:absolute;
+			left:800px;
+			top:6px;
+		}
+		ul li{
+		float:left;
+		font-size:25px;
+		width:190px;
+		height:40px;
+		vertical-align:middle;
+		text-align:center;
+		line-height:40px;
+		opacity:0.5;
+		}
+		ul li a{
+			text-decoration:none;
+			color:red;
+			display:block;
+			padding:10px;
+		}
+		ul li a:hover{
+		color:white;
+		background-color:orange;
+		opacity:0.5;
+		text-decoration:none;
+		}
+		.image:hover{
+		transition:0.8s;
+		 transform: scale(1.1);
+		}
+		#bar{
+			padding-left:170px;
+			font-size:10px;
+			font-stretch:expanded;
+			padding-top:4.5px;
+			padding-bottom:4.5px;
+			background-color:#ddd;
+			opacity:0.7;
+			letter-spacing:1px;
+		}
+		#bar a{
+			text-decoration:none;
+		}
+		#nav{
+		overflow:hidden;
+		background-color:black;
+		height:260px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		}
+		#nav .margin{
+			padding-left:210px;
+			padding-right:170px;
+		}
+		#nav #foodimage{
+			width:300px;
+			height:200px;
+			margin-top:28px;
+			display:inline-block;
+		}
+		.aligntoimage{
+			padding-left:30px;
+			padding-top:20px;
+			display:inline-block;
+			color:white;
+			font-size:20px;
+		}
+		.foodtype{
+			color:grey;
+			padding-left:0px;
+			font-size:17px;
+		}
+		.foodtype .boxforopen{
+			background-color:#ddd;
+			opacity:0.7;
+			width:190px;
+			padding-top:3px;
+			padding-bottom:3px;
+			padding-left:17px;
+			font-size:14px;
+			display:inline-block;
+		}
+		.checked{
+			color:white;
+		}
+		.vl {
+			display:inline-block;
+			border-right:1px solid;
+			border-color:#ddd;
+			opacity:0.5;
+			height:45px;
+			margin-left:30px;
+			margin-right:30px;
+			
+
+		}
+		.inf{
+			width:100%;
+			height:auto;
+			vertical-align:center;
+		}
+		.inf .rating{
+			display:inline-block;
+			width:auto;
+		}
+		.inf .deliveryavail{
+			display:inline-block;
+			width:auto;
+		}
+		.inf .costfortwo{
+			display:inline-block;
+			width:auto;
+		}
+		.veg
+		{
+			background-color:white;
+			position:absolute;
+			top:350px;
+			left:700px;
+			padding:10px;
+			font-weight:bold;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			}
+		
+		.content{
+			padding-top:0px;
+		}
+
+		.sticky{
+			position: fixed;
+			top: 0;
+			width: 100%;
+			
+		}
+		.sticky + .content {
+			padding-top:270px;
+			
+		}
+		.foodnme
+		{
+			display:inline-block;
+			margin-left:354px;
+		}
+		.menu{
+			display:inline-block;
+			vertical-align:2070px;
+			margin-right:58px;
+		}
+		.foodnme a{
+			text-decoration:none;
+			color:black;
+		}
+		foodname a:active{
+			color:green;
+		}
+		.FL{
+			font-size:15px;
+			padding:5px;
+			overflow:hidden;
+			white-space:nowrap;
+			text-overflow:ellipsis
+			display:block;
+			cursor:pointer;
+		}
+		._name:hover{
+			color:#fc8019;
+		}
+		_name{
+			font-weight:600;
+		}
+		.vline{
+			display:inline-block;
+			border-left:1.2px solid #ddd;
+			opacity:7.0;
+			height:2300px;
+		}
+		.food{
+			display:inline-block;
+			vertical-align:top;
+		}
+		.food1{
+			margin-top:0px;
+		}
+		.item{
+			margin-top:50px;
+			margin-left:70px;
+		}
+		.item1
+		{	
+			float:left;
+			width:270px;
+			font-family:arial;
+			margin-bottom:90px;
+			margin-left:60px;
+		}
+		.title{
+			color:grey;
+			font-size:15px;
+			margin-bottom:5px;
+		}
+		.addbox{
+			border: none;
+			display: inline-block;
+			padding: 3px;
+			margin-left:110px;
+			margin-bottom:20px;
+			color: green;
+			border: 1px solid green;
+			font-weight:Bold;
+			text-align: center;
+			width: 80px;
+			height:30px;
+			font-size: 18px;
+		}
+		.check{
+			display:inline-block;
+			margin-left:10px;
+		}
+		.border{
+			border-bottom:1px solid #ddd;
+			opacity:1;
+			padding-bottom:20px;
+		}
+	
+		.foodlist{
+			display:inline-block;
+			width:200px;
+			font-size:17px;
+			font-weight:bold;
+			margin-right:140px;
+		}
+		.price{
+			margin-left:70px;
+			margin-top:-16px;
+		}
+		.checkout{
+			display:inline-block;
+			vertical-align:top;
+			margin-top:300px;
+			margin-left:22px;
+			position:fixed;
+		}
+		.checkout input[type=button]{
+			border: none;
+			display: inline-block;
+			padding: 8px;
+			margin-bottom:20px;
+			color: white;
+			background-color: green;
+			text-align: center;
+			cursor: pointer;
+			width: 220px;
+			height:40px;
+			font-size: 18px;
+		}
+		.checkout button:hover{
+			opacity: 0.7;
+		}
+		.bottom{
+			position:relative;
+			background-color:black;
+			padding-top:50px;
+		}
+		.cuisine{
+			display:inline-block;
+			color:white;
+			font-size:18px;
+			font-weight:bold;
+			margin-left:500px;
+		}
+		.phn{
+			display:inline-block;
+			color:white;
+			font-size:18px;
+			font-weight:bold;
+			margin-left:100px;
+		}
+		.top{
+			display:inline-block;
+			margin-left:520px;
+			margin-top:-100px;
+		}
+		.myBtn {
+			display: inline-block;
+			z-index: 99;
+			font-size: 18px;
+			border: none;
+			outline: none;
+			background-color: white;
+			opacity:0.8;
+			color: black;
+			cursor: pointer;
+			padding: 15px;
+			padding-left:20px;
+			padding-right:20px;
+			border-radius:1000px 1000px;
+		}
+		.myBtn:hover {
+			background-color: #555;
+		}
+		.appstore{
+			margin-top:40px;
+			margin-left:400px;
+			border: 1px solid white;
+			border-radius:10px;
+			display: inline-block;
+			padding: 8px;
+			margin-bottom:50px;
+			color: white;
+			background-color: #000;
+			text-align: center;
+			cursor: pointer;
+			width: 200px;
+			height:70px;
+			font-size: 18px;
+		}
+		.playstore{
+			display: inline-block;
+			margin-top:40px;
+			margin-left:400px;
+			border: 1px solid white;
+			border-radius:10px;
+			padding: 8px;
+			margin-bottom:50px;
+			color: white;
+			background-color: #000;
+			text-align: center;
+			cursor: pointer;
+			width: 200px;
+			height:70px;
+			font-size: 18px;
+		}
+		.playstore:hover{
+			transition:0.8s;
+			transform: scale(1.05);
+		}
+		.appstore:hover{
+			transition:0.8s;
+			transform: scale(1.05);
+		}
+		
+		
+	</style>
+</head>
+<body>
+<div class="bar">
+	<a href="../next.html"><img src="../../images/title.png" height="75px" width="40px" alt="Sangawat_Food" style="padding-top:10px;" class="image"></a>
+	<span class="location"><a href="../next.html" alink="black" vlink="black">Kurukshetra</a></span>
+	<span class="addr">NIT, Main Gate no.1</span>
+	<ul>
+		<li valign="middle"><a href="../about.html"><i class="glyphicon glyphicon-user" style="font-size:40px;color:lightblue;text-shadow:2px 2px 4px #000000;"></i> About</a></li>
+		<li valign="middle"><a href="../contact.html"> <i class="glyphicon glyphicon-envelope" style="font-size:40px;color:lightblue;text-shadow:2px 2px 4px #000000;"></i> Contact</a></li>
+		<li valign="middle"><a href="../Help.html"> <i class="glyphicon glyphicon-thumbs-up" style="font-size:40px;color:lightblue;text-shadow:2px 2px 4px #000000;"></i> Help</a></li
+	</ul>
+</div>
+<br>
+<br>
+<div id="bar">
+	<a href="../next.html">Home</a> /  Amritsari Kulcha
+</div>
+<div id="nav">
+	<div class="margin">
+		<img src="../../images/amritsari kulcha.jpg" id="foodimage"  alt="Amritsari Kulcha" align="left">
+		<div class="aligntoimage"> 
+			<h2 style="color:white; font-size:33px;">Amritsari Kulcha</h2>
+			<div class="foodtype">
+				<div class="boxforopen">
+					Opens at 10am, Everyday
+				</div>
+				<p style="display:inline-block;">North Indian</p>
+			</div>
+			<br>
+			<div class="inf">
+				<div class="rating">
+					<span class="fa fa-star checked"></span> 3.7
+					<div class="foodtype" style="font-size:13px;">50+ Ratings</div>
+				</div>
+				<div class="vl"></div>
+				<div class="deliveryavail">
+					52 mins
+					<div class="foodtype" style="font-size:13px;">For Delivery	</div>
+				</div>
+				<div class="vl"></div>
+				<div class="costfortwo">
+					 ₹ 200
+					<div class="foodtype" style="font-size:13px;">Cost for two	</div>
+				</div>
+			</div>	
+		</div>
+		<div class="veg">
+			<span style="color:green;padding:0.3em">&#9679;</span>Veg Only
+		</div>
+	</div>
+</div>
+<div class="content">
+<form name="frm">
+<div class="foodnme">
+	<div class="menu">
+		<a href="#recommend">
+			<div class="FL _name">Recommend</div>
+		</a>
+		<a href="#bread">
+			<div class="FL _name">Breads</div>
+		</a>
+		<a href="#thali">
+			<div class="FL _name">Thali</div>
+		</a>
+		<a href="#beverage">
+			<div class="FL _name">Beverages</div>
+		</a>
+		<a href="#starter">
+			<div class="FL _name">Starter</div>
+		</a>
+	</div>
+	
+	<div class="vline"></div>
+</div>
+
+<div class="food">
+	<div id="recommend" class="food1">
+		<h2 style="font-size:35px; padding:10px; font-weight:bold; margin-left:100px; margin-top:40px;">Recommend</h2>
+		<div class="item">
+			<div class="item1">
+				<img src="../../images/gobikulcha.jpg" height="150px" width="250px" alt="Gobi Kulcha" >
+				<h4 style="font-weight:bold">Gobi Kulcha</h4>
+				<div class="title">Breads</div>
+				₹ 60
+				<div class="addbox">Add -> </div>
+				<div class="check">
+					<input type="checkbox" style="cursor:pointer;" name="op">
+				</div>
+			</div>
+			<div class="item1">
+				<img src="../../images/alupyazkulcha.jpg" height="150px" width="250px" alt="Aloo Pyaz Kulcha" >
+				<h4 style="font-weight:bold">Aloo Pyaz Kulcha</h4>
+				<div class="title">Breads</div>
+				₹ 55
+				<div class="addbox">Add -> </div>
+				<div class="check">
+					<input type="checkbox" style="cursor:pointer;" name="op1">
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item1">
+				<img src="../../images/paneerkulcha.jpg" height="150px" width="250px" alt="Paneer Kulcha" >
+				<h4 style="font-weight:bold">Paneer Kulcha</h4>
+				<div class="title">Breads</div>
+				₹ 85
+				<div class="addbox">Add -> </div>
+				<div class="check">
+					<input type="checkbox" style="cursor:pointer;" name="op2">
+				</div>
+			</div>
+			<div class="item1">
+				<img src="../../images/masalakulcha.jpg" height="150px" width="250px" alt="Masala Kulcha" >
+				<h4 style="font-weight:bold">Masala Kulcha</h4>
+				<div class="title">Breads</div>
+				₹ 65
+				<div class="addbox">Add -> </div>
+				<div class="check">
+					<input type="checkbox" style="cursor:pointer;" name="op3">
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div  class="food1">
+		<h2 style="font-size:35px; padding:10px; font-weight:bold; margin-left:100px; margin-top:40px;"><div id="bread">Breads</div></h2>
+		<div class="item">
+				<div class="border">
+				<span style="color:green;padding:0.3em; display:inline-block; margin-left:50px;">&#9679;</span>
+				<div class="foodlist"> Aloo Pyaz Kulcha </div>
+				<div class="addbox">Add -> </div>
+				<div class="check">
+					<input type="checkbox" style="cursor:pointer;" name="op4">
+				</div>
+				<div class="price"> ₹ 55 </div>
+				</div>
+		</div>
+		<div class="item">
+				<div class="border">
+				<span style="color:green;padding:0.3em; display:inline-block; margin-left:50px;">&#9679;</span>
+				<div class="foodlist"> Gobi Kulcha </div>
+				<div class="addbox">Add -> </div>
+				<div class="check">
+					<input type="checkbox" style="cursor:pointer;" name="op5">
+				</div>
+				<div class="price"> ₹ 60 </div>
+				</div>
+		</div>
+		<div class="item">
+				<div class="border">
+				<span style="color:green;padding:0.3em; display:inline-block; margin-left:50px;">&#9679;</span>
+				<div class="foodlist"> Masala Kulcha </div>
+				<div class="addbox">Add -> </div>
+				<div class="check">
+					<input type="checkbox" style="cursor:pointer;" name="op6">
+				</div>
+				<div class="price"> ₹ 65 </div>
+				</div>
+		</div>
+		<div class="item">
+				<div class="border">
+				<span style="color:green;padding:0.3em; display:inline-block; margin-left:50px;">&#9679;</span>
+				<div class="foodlist"> Paneer Kulcha </div>
+				<div class="addbox">Add -> </div>
+				<div class="check">
+					<input type="checkbox" style="cursor:pointer;" name="op7">
+				</div>
+				<div class="price"> ₹ 85 </div>
+				</div>
+		</div>
+	</div>
+	<br>
+	<div id="thali" class="food1">
+		<h2 style="font-size:35px; padding:10px; font-weight:bold; margin-left:100px; margin-top:40px;">Thali</h2>
+		<div class="item">
+				<div class="border">
+				<span style="color:green;padding:0.3em; display:inline-block; margin-left:50px;">&#9679;</span>
+				<div class="foodlist"> Special Kulcha Thali </div>
+				<div class="addbox">Add -> </div>
+				<div class="check">
+					<input type="checkbox" style="cursor:pointer;" name="op8">
+				</div>
+				<div class="price"> ₹ 110 </div>
+				</div>
+		</div>
+	</div>
+	<br>
+	<div id="beverage" class="food1">
+		<h2 style="font-size:35px; padding:10px; font-weight:bold; margin-left:100px; margin-top:40px;">Beverages</h2>
+		<div class="item">
+				<div class="border">
+				<span style="color:green;padding:0.3em; display:inline-block; margin-left:50px;">&#9679;</span>
+				<div class="foodlist"> Special Sweet Alssi </div>
+				<div class="addbox">Add -> </div>
+				<div class="check">
+					<input type="checkbox" style="cursor:pointer;" name="op9">
+				</div>
+				<div class="price"> ₹ 45 </div>
+				</div>
+		</div>
+		<div class="item">
+				<div class="border">
+				<span style="color:green;padding:0.3em; display:inline-block; margin-left:50px;">&#9679;</span>
+				<div class="foodlist"> Special Namekeen Lassi </div>
+				<div class="addbox">Add -> </div>
+				<div class="check">
+					<input type="checkbox" style="cursor:pointer;" name="op10">
+				</div>
+				<div class="price"> ₹ 45 </div>
+				</div>
+		</div>
+	</div>
+	<br>
+	<div id="starter" class="food1">
+		<h2 style="font-size:35px; padding:10px; font-weight:bold; margin-left:100px; margin-top:40px;">Starter</h2>
+		<div class="item">
+				<div class="border">
+				<span style="color:green;padding:0.3em; display:inline-block; margin-left:50px;">&#9679;</span>
+				<div class="foodlist"> Chole Bhature + Achar </div>
+				<div class="addbox">Add -> </div>
+				<div class="check">
+					<input type="checkbox" style="cursor:pointer;" name="op11">
+				</div>
+				<div class="price"> ₹ 50 </div>
+				</div>
+		</div>
+	</div>
+	<br>
+</div>
+<div class="checkout">
+		<input type="button" onclick="order()" value="CHECKOUT"> 
+</div>
+</form>
+</div>
+<div class="bottom">
+	<div class="phn">
+		PHONE NUMBER
+		<p style="color:#ddd; Opacity:0.5; font-size:17px; font-weight:normal; margin-top:14px; text-align:center;">091-123XXXXXXX</p>
+	</div>
+	<div class="cuisine">
+		CUISINES
+		<p style="color:#ddd; Opacity:0.5; font-size:17px; font-weight:normal; margin-top:14px; text-align:center;">North Indian</p>
+	</div>
+	<div class="top">
+		<a href="#top"><button class="myBtn" title="Go to top"><b>&#129137;</b></button></a>
+	</div>
+	<br>
+	<div class="playstore">
+		<div style=" display:inline-block;">
+			<img src="playicon.png" width="40px" height="50px" style="display:block;">
+		</div>
+		<div style="display:inline-block;">
+			<div style="font-size:15px; text-align:left;">Get it on</div>
+			<div style="font-size:25px;">Google Play</div>
+		</div>
+	</div>
+	<div class="appstore">
+		<div style=" display:inline-block;">
+			<i class="fa fa-apple" style="font-size:48px;color:white;"></i>
+		</div>
+		<div style="display:inline-block;">
+			<div style="font-size:15px;">Download on the</div>
+			<div style="font-size:25px;">App Store</div>
+		</div>
+	</div>
+</div>
+<script language="javascript">
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("nav");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+ if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 120) {
+	document.getElementById("nav").style.height = "198px";
+	document.getElementById("foodimage").style.height="135px";
+  } else {
+    document.getElementById("nav").style.height = "260px";
+	document.getElementById("foodimage").style.height="200px";
+  }
+}
+
+function order()
+{	var price=0;
+	if((document.frm.op.checked)||(document.frm.op5.checked))
+	{
+		price=price+60;
+	}
+	if((document.frm.op1.checked)||(document.frm.op4.checked))
+	{
+		price=price+55;
+	}
+	if((document.frm.op2.checked)||(document.frm.op7.checked))
+	{
+		price=price+85;
+	}
+	if((document.frm.op3.checked)||(document.frm.op6.checked))
+	{
+		price=price+65;
+	}
+	if(document.frm.op8.checked)
+	{
+		price=price+110;
+	}
+	if(document.frm.op9.checked)
+	{
+		price=price+45;
+	}
+	if(document.frm.op10.checked)
+	{
+		price=price+45;
+	}
+	if(document.frm.op11.checked)
+	{
+		price=price+50;
+	}
+	if(document.frm.op.checked || document.frm.op1.checked || document.frm.op2.checked || document.frm.op3.checked || document.frm.op4.checked || document.frm.op5.checked || document.frm.op6.checked || document.frm.op7.checked || document.frm.op8.checked || document.frm.op9.checked || document.frm.op10.checked || document.frm.op11.checked )
+	{
+		alert("Your Order is Booked, Keep ₹ "+price+" ready to take your order");
+	}
+	else{
+		alert("For Checkout Select any of food item");
+	
+	}
+	
+
+}
+
+
+
+</script>
+</body>
+</html>

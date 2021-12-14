@@ -1,0 +1,138 @@
+	body{
+		font-family:arial;
+		background:url("../images/bg.jpg");
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:cover;
+	}
+	.img
+	{	
+		width:50%;
+		height:500px;
+		display:inline-block;
+	}
+	.myslide{
+		animation-name: myslide;
+		animation-duration:3.5s;
+	}
+	@keyframes myslide
+	{
+		from{opacity:0.6;}
+		to{opacity:0.1;}
+	}
+	h1{
+		color:white;
+		font-family:Baskerville Old Face;
+		font-size:40px;
+		font-weight:bold;
+	}
+	.inf
+	{	
+		position:absolute;
+		left:800px;
+		top:20px;
+		display:inline-block;
+		margin:10px;
+	}
+	.wlcm
+	{	
+		height:100%;
+		width:50%;
+		display:inline-block;
+		color:black;
+		padding-left:50px;
+		padding-top:15px;
+		font-size:18px;
+	}
+	.container {
+		position:absolute;
+		left:64%;
+		top:250px;
+		margin: 20px;
+		min-width:300px;
+		padding: 9px;
+		background-color: white;
+		}
+
+	input[type=email],input[type=password]{
+			width:100%;
+			margin-bottom:20px;
+			padding: 15px;
+			box-sizing: border-box;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			background: #f1f1f1;
+		}
+	input[type=email]:focus {
+		border: 3px solid #555;
+		background-color: #ddd;
+		}
+	input[type=password]:focus {
+		border: 3px solid #555;
+		background-color: #ddd;
+	}
+	input[type=submit],input[type=button]{
+		height:40px;
+		width:100%;
+		padding:10px 15px;
+		background-color:#24a0ed;
+		border:1px solid white;
+		margin-bottom:7px;
+	 
+		cursor:pointer
+	}
+	input[type=submit]:hover
+	{
+		background-color:green;
+	}
+	input[type=button]:hover
+	{
+		background-color:green;
+	}
+	
+	h2{
+		font-size:30px;
+	}
+	@media screen and (max-width:480px)
+	{
+		.img{
+			display:none;
+		}
+		h1{
+			color:Green;
+			font-size:30px;
+		}
+		.inf{
+			left:0px;
+			font-size:12px;
+		}
+		.container{
+			left:0;
+			top:210px;
+			min-width:5px;
+			height:100px;
+		}
+		body{
+			font-family:arial;
+			background:none;
+		}
+		h2{
+			font-size:20px;
+		}
+		input[type=email],input[type=password]{
+			width:100%;
+			margin-bottom:20px;
+			padding: 8px;
+			box-sizing: border-box;
+		}
+		input[type=submit],input[type=button]{
+		height:30px;
+		width:100%;
+		padding:8px 10px;
+		}
+		label{
+			font-size:13px;
+		}
+	}
+	
+	

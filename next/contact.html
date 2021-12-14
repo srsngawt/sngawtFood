@@ -1,0 +1,243 @@
+<!Doctype HTML>
+<html lang="en">
+<head>
+	<title>Contact Us | Sangawat_Food</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=BioRhyme Expanded' rel='stylesheet'>
+	<link rel="icon" href="../images/title.png" type="image/png">
+	<style>
+		body
+		{
+			font-family:arial;
+		}
+		.bar
+		{	display:inline-block;
+			width:85%;
+			height:65px;
+			padding-left:150px;
+			padding-right:150px;
+			vertical-align:middle;
+			
+		}
+		
+		.location
+		{	font-size:20px;
+			font-weight:bold;
+			margin:10px;
+			position:absolute;
+			top:17px;
+			left:220px;
+		}
+		ul
+		{
+			margin:0;
+			padding:0;
+			list-style:none;
+			position:absolute;
+			left:800px;
+			top:6px;
+		}
+		ul li{
+		float:left;
+		font-size:25px;
+		width:190px;
+		height:40px;
+		vertical-align:middle;
+		text-align:center;
+		line-height:40px;
+		opacity:0.5;
+		}
+		ul li a{
+			text-decoration:none;
+			color:red;
+			display:block;
+			padding:10px;
+		}
+		ul li a:hover{
+		color:white;
+		background-color:orange;
+		opacity:0.5;
+		text-decoration:none;
+		}
+		#nav{
+			overflow:hidden;
+			background-color:black;
+			height:150px;
+			width:100%;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			display:block;
+			font-weight:bold;
+			float:left;
+			color:white;
+			padding:12px 17px;
+			font-size:35px;
+
+		}
+		#margin{
+			margin-top:50px;
+			margin-left:200px;
+			margin-right:150px;
+		}
+		.content{
+			margin-left:270px;
+			margin-top:200px;
+		}
+		.sticky{
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+		.image:hover{
+		transition:0.8s;
+		 transform: scale(1.1);
+		}
+		.form{
+			margin-top:190px;
+			width:25%;
+			margin-left:600px;	
+		}
+		label{
+			font-family:BioRhyme Expanded;
+			font-size:16px;
+		}
+		input[type=submit]{
+			height:40px;
+			border:none;
+			width:100%;
+			padding:10px 15px;
+			background-color:black;
+			margin-top:7px;
+			color:white;
+			cursor:pointer;
+			padding:3px;
+		}
+		.bottom{
+			position:relative;
+			background-color:black;
+			padding-top:50px;
+		}
+		.section{
+			display:inline-block;
+			color:white;
+			font-size:18px;
+			font-weight:bold;
+			margin-left:100px;
+		}
+		.helpcenter{
+			display: inline-block;
+			margin-top:40px;
+			border: 1px solid white;
+			border-radius:10px;
+			padding: 8px;
+			margin-bottom:50px;
+			color: white;
+			background-color: #000;
+			text-align: center;
+			cursor: pointer;
+			width: 400px;
+			height:50px;
+			font-size: 18px;
+		}
+		.helpcenter:hover{
+			transition:0.8s;
+			transform: scale(1.05);
+		}
+</style>
+</head>
+<body>
+<div class="bar">
+	<a href="next.html"><img src="../images/title.png" height="75px" width="40px" alt="Sangawat_Food" style="padding-top:10px;" class="image"></a>
+	<span class="location">Contact Us</span>
+	
+	<ul>
+		<li valign="middle"><a href="about.html"><i class="glyphicon glyphicon-user" style="font-size:40px;color:lightblue;text-shadow:2px 2px 4px #000000;"></i> About</a></li>
+		<li valign="middle"><a href="contact.html"> <i class="glyphicon glyphicon-envelope" style="font-size:40px;color:lightblue;text-shadow:2px 2px 4px #000000;"></i> Contact</a></li>
+		<li valign="middle"><a href="help.html"> <i class="glyphicon glyphicon-thumbs-up" style="font-size:40px;color:lightblue;text-shadow:2px 2px 4px #000000;"></i> Help</a></li
+	</ul>
+</div>
+<br>
+<br>
+<div id="nav">
+	<div id="margin">
+		Contact Us
+		<div style="font-size:20px; font-weight:normal;">We are ready to take your feedback and solve your problem.</div>
+	</div>
+</div>
+<div class="form">
+<form name="frm" onsubmit="alrt()">
+	<label for="name">Name</label>
+	<input type="text" style="width:100%" name="t1" required>
+	<br>
+	<br>
+	<label for="email">Work Email</label>
+	<input type="email" style="width:100%;" name="e1" required>
+	<br>
+	<br>
+	<label for="subject">Subject</label>
+	<input type="text" style="width:100%" name="t2" required>
+	<br>
+	<br>
+	<label for="message">Message</label>
+	<textarea cols="54" rows="10">
+	</textarea>
+	<br>
+	<input type="submit" value="SUBMIT">
+</form>
+</div>
+<br>
+<br>
+<div class="bottom">
+<center>
+	<div class="section">
+		Questions are not answered here.
+		<br>
+		<a href="help.html">
+		<div class="helpcenter">
+		<div style="display:inline-block;">
+			<div style="font-size:25px;">Visit Our help Centre</div>
+		</div>
+		</div>
+		</a>
+	</div>
+</center>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("nav");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+ if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+	document.getElementById("nav").style.height = "90px";
+	document.getElementById("margin").style.margin = "0px 150px 0 200px";
+  } else {
+    document.getElementById("nav").style.height = "150px";
+	document.getElementById("margin").style.margin= "50px 150px 0 200px";
+
+  }
+}
+var name;
+var sub;
+function alrt()
+{
+name=document.frm.t1.value;
+sub=document.frm.t2.value;
+
+var con=confirm("Dear "+name+", Your Message on the Subject '"+sub+"' is submitted to us.\nPress 'OK' for go back to Home");
+	if(con==true)
+	{	
+		window.close("help.html");
+		window.open("next.html");
+		
+	}
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!Doctype HTML>
+<html lang="en">
+<head>
+	<title>Rating | Sangawat Food</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="../images/title.png" type="image/png">
+	<style>
+		body
+		{
+			font-family:arial;
+		}
+		.bar
+		{	display:inline-block;
+			width:85%;
+			height:65px;
+			padding-left:150px;
+			padding-right:150px;
+			vertical-align:middle;
+			
+		}
+		
+		.location
+		{	font-size:20px;
+			font-weight:bold;
+			margin:10px;
+			position:absolute;
+			top:17px;
+			left:200px;
+			
+		}
+		ul
+		{
+			margin:0;
+			padding:0;
+			list-style:none;
+			position:absolute;
+			left:800px;
+			top:6px;
+		}
+		ul li{
+		float:left;
+		font-size:25px;
+		width:190px;
+		height:40px;
+		vertical-align:middle;
+		text-align:center;
+		line-height:40px;
+		opacity:0.5;
+		}
+		ul li a{
+			text-decoration:none;
+			color:red;
+			display:block;
+			padding:10px;
+		}
+		ul li a:hover{
+		color:white;
+		background-color:orange;
+		opacity:0.5;
+		text-decoration:none;
+		}
+		img:hover{
+		transition:0.8s;
+		 transform: scale(1.1);
+		}
+		.heading {
+			font-size: 25px;
+			margin-left: 120px;
+		}
+
+		.fa {
+			font-size: 25px;
+		}
+
+		.checked {
+			color: orange;
+		}
+
+		/* Three column layout */
+		.side {
+			float: left;
+			width: 15%;
+			margin-top:10px;
+		}
+		.row{
+			width:70%;
+			position:absolute;
+			top:50%;
+			left:15%;
+		}
+
+		.middle {
+			margin-top:10px;
+			float: left;
+			width: 70%;
+		}	
+	
+		/* Place text to the right */
+		.right {
+			text-align:left;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* The bar container */
+		.bar-container {
+			width: 80%;
+			background-color: #f1f1f1;
+			text-align: center;
+			color: white;
+		}
+
+		/* Individual bars */
+		.bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
+		.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+		.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+		.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+		.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+		/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+		@media (max-width: 400px) {
+		.side, .middle {
+			width: 100%;
+		}
+		.right {
+			display: none;
+		}
+	}
+				
+	</style>
+</head>
+<body>
+<div class="bar">
+	<a href="./next.html"><img src="../images/title.png" height="60px" width="40px" alt="Sangawat_Food" ></a>
+	<span class="location">User Rating</span>
+	<ul>
+		<li valign="middle"><a href="./about.html"><i class="glyphicon glyphicon-user" style="font-size:40px;color:lightblue;text-shadow:2px 2px 4px #000000;"></i> About</a></li>
+		<li valign="middle"><a href="./contact.html"> <i class="glyphicon glyphicon-envelope" style="font-size:40px;color:lightblue;text-shadow:2px 2px 4px #000000;"></i> Contact</a></li>
+		<li valign="middle"><a href="./Help.html"> <i class="glyphicon glyphicon-thumbs-up" style="font-size:40px;color:lightblue;text-shadow:2px 2px 4px #000000;"></i> Help</a></li
+	</ul>
+</div>
+<br>
+<br>
+
+<hr>
+<br>
+<span class="heading">User Rating</span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<p style="margin-left:130px;">4.1 average based on 100K reviews.</p>
+<hr style="border:3px solid #f1f1f1">
+<center>
+<div class="row">
+  <div class="side">
+    <div>5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>60K</div>
+  </div>
+  <div class="side">
+    <div>4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>25K</div>
+  </div>
+  <div class="side">
+    <div>3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>10K</div>
+  </div>
+  <div class="side">
+    <div>2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>4k</div>
+  </div>
+  <div class="side">
+    <div>1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>1k</div>
+  </div>
+</div>
+</center>
+</body>
+</html>
